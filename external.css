@@ -1,0 +1,65 @@
+/* For mobile phones */
+
+/* For the menu button */
+.navbar .menu-toggle {
+    display: none; /* Initially hide the menu toggle button */
+}
+
+@media screen and (max-width: 767px) {
+    .navbar.responsive .menu-toggle {
+        display: block; /* Display the menu toggle button when navbar is responsive */
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .navbar ul {
+        display: none; /* Hide the nav links */
+        flex-direction: column; /* Stack the items vertically */
+        align-items: center; /* Center items vertically */
+        text-align: center; /* Center text horizontally */
+        margin-top: 10px; /* Adjust top margin for spacing */
+    }
+
+    .navbar ul li {
+        margin: 10px 0; /* Adjust vertical margin for spacing */
+    }
+
+    .icons {
+        margin: 10px; /* Adjust margin for spacing */
+    }
+
+    .icons button i {
+        margin: 10px; /* Remove margin for spacing */
+    }
+
+    .btn {
+        padding: 10px 20px; /* Adjust button padding for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* For the menu button */
+.navbar .menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar.responsive .menu-toggle {
+        display: block;
+    }
+    .navbar.responsive a:not(:first-child) {
+        display: block;
+        text-align: center;
+    }
+
+    .column {
+        width: 100%; /* Set column width to 100% for mobile view */
+        height: 100%;
+        margin-bottom: 20px; /* Add spacing between columns */
+    }
+
+    .para-column {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
